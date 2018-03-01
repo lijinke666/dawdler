@@ -1,0 +1,14 @@
+{
+  "name": "dawdler",
+  "version": "0.0.1",
+  "description": "nodejs | react project template generator",
+  "main": "index.js",
+  "repository": "https://github.com/lijinke666/dawdler.git",
+  "author": "Jinke.Li <1359518268@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "commander": "^2.14.1",
+    "inquirer": "^5.1.0"
+  }
+}

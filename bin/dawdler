@@ -1,0 +1,38 @@
+#!/usr/bin/env node 
+'use strict'
+
+const path = require('path')
+const program = require('commander')
+
+process.env.NODE_PATH = path.resolve(__dirname,'/../node_modules/')
+
+ // 定义当前版本
+program.version(require('../package').version )
+
+// 定义使用方法
+program.usage('<command>')
+
+//react 
+program
+    .command('react')
+    .description('Create react project template')
+    .alias('r')
+    .action(() => {
+        require('../lib/react')()
+    })
+
+// node
+program
+    .command('node')
+    .description('Create node project template')
+    .alias('n')
+    .action(() => {
+        require('../lib/node')()
+    })
+
+
+program.parse(process.argv)
+
+if(!program.args.length){
+  program.help()
+}

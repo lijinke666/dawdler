@@ -19,15 +19,11 @@ npm install
 npm start
 ```
 
-## Options
-```
- -V, --version  output the version number
- -h, --help     output usage information
-```
-
 ## Commands
 
-```
+```bash
+ -V, --version  output the version number
+ -h, --help     output usage information
  react|r  Create react project template
  node|n   Create node project template
 ```

@@ -20,7 +20,7 @@ program
     .alias('r')
     .action(() => {
         console.log(chalk.cyan('good luck.'))
-        require('../lib/init')()
+        require('../lib/init')
     })
 
 //react 

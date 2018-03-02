@@ -3,6 +3,7 @@
 
 const path = require('path')
 const program = require('commander')
+const chalk = require('chalk')
 
 process.env.NODE_PATH = path.resolve(__dirname,'/../node_modules/')
 
@@ -12,13 +13,24 @@ program.version(require('../package').version )
 // 定义使用方法
 program.usage('<command>')
 
+//init
+program
+    .command('init')
+    .description('Select and create project template')
+    .alias('r')
+    .action(() => {
+        console.log(chalk.cyan('good luck.'))
+        require('../lib/init')()
+    })
+
 //react 
 program
     .command('react')
     .description('Create react project template')
     .alias('r')
     .action(() => {
-        require('../lib/react')()
+        console.log(chalk.cyan('Only react and redux are currently supported project.'))
+        require('../lib/react')
     })
 
 // node
@@ -27,7 +39,9 @@ program
     .description('Create node project template')
     .alias('n')
     .action(() => {
-        require('../lib/node')()
+        console.log(chalk.cyan('Only express projects are currently supported.'))
+        console.log(chalk.red('node project template in development'))
+        require('../lib/node')
     })
 
 

@@ -12,6 +12,13 @@ npm install dawdler -g
 $ [dl | dawdler] <command>
 ```
 
+## Example
+```
+$ dl react
+npm install
+npm start
+```
+
 ## Options
 ```
  -V, --version  output the version number

@@ -25,7 +25,8 @@ npm start
  -V, --version  output the version number
  -h, --help     output usage information
  react|r  Create react project template
- node|n   Create node project template
+ node|n   Create node project template    (TODO:In development)
+ npm|m    Create npm module plugin        (TODO:In development)
 ```
 
 ## License

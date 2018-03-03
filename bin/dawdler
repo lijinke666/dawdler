@@ -44,6 +44,16 @@ program
         require('../lib/node')
     })
 
+// npm plugins
+program
+    .command('npm')
+    .description('Create npm module plugin')
+    .alias('m')
+    .action(() => {
+        console.log(chalk.red('npm project template in development'))
+        require('../lib/npm')
+    })
+
 
 program.parse(process.argv)
 

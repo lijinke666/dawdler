@@ -19,40 +19,40 @@ program
     .description('Select and create project template')
     .alias('r')
     .action(() => {
-        console.log(chalk.cyan('good luck.'))
+        console.log(chalk.cyan('Thanks for using Dawdler , good luck.'))
         require('../lib/init')
     })
 
-//react 
-program
-    .command('react')
-    .description('Create react project template')
-    .alias('r')
-    .action(() => {
-        console.log(chalk.cyan('Only react and redux are currently supported project.'))
-        require('../lib/react')
-    })
+// //react 
+// program
+//     .command('react')
+//     .description('Create react project template')
+//     .alias('r')
+//     .action(() => {
+//         console.log(chalk.cyan('Only react and redux are currently supported project.'))
+//         require('../lib/react')
+//     })
 
-// node
-program
-    .command('node')
-    .description('Create node project template')
-    .alias('n')
-    .action(() => {
-        console.log(chalk.cyan('Only express projects are currently supported.'))
-        console.log(chalk.red('node project template in development'))
-        require('../lib/node')
-    })
+// // node
+// program
+//     .command('node')
+//     .description('Create node project template')
+//     .alias('n')
+//     .action(() => {
+//         console.log(chalk.cyan('Only express projects are currently supported.'))
+//         console.log(chalk.red('node project template in development'))
+//         require('../lib/node')
+//     })
 
-// npm plugins
-program
-    .command('npm')
-    .description('Create npm module plugin')
-    .alias('m')
-    .action(() => {
-        console.log(chalk.red('npm project template in development'))
-        require('../lib/npm')
-    })
+// // npm plugins
+// program
+//     .command('npm')
+//     .description('Create npm module plugin')
+//     .alias('m')
+//     .action(() => {
+//         console.log(chalk.red('npm project template in development'))
+//         require('../lib/npm')
+//     })
 
 
 program.parse(process.argv)

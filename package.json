@@ -2,7 +2,6 @@
   "name": "dawdler",
   "version": "0.0.1",
   "description": "A template generator for react and nodejs projects.",
-  "main": "index.js",
   "author": "Jinke.Li <1359518268@qq.com>",
   "license": "MIT",
   "bin": {

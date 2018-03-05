@@ -14,10 +14,15 @@ $ [dl | dawdler] <command>
 
 ## Example
 ```
-$ dl react
-Project name test
-Select project type REACT
-cd test
+$ dl init
+? Project name body
+? Select project type REACT
+
+ Start pulling the project. Please waiting ...
+
+ √ generator completed!
+
+cd body
 npm install | yarn
 npm start
 ```
@@ -27,14 +32,19 @@ npm start
 ```bash
  -V, --version  output the version number
  -h, --help     output usage information
- react|r  Create react project template
- node|n   Create node project template    (TODO:In development)
- npm|m    Create npm module plugin        (TODO:In development)
+ init           Create Project template
+```
+
+## Development
+```
+git clone https://github.com/lijinke666/dawdler.git
+npm install | yarn
+npm link
 ```
 
 ## Template Address
 - `React`: [https://github.com/lijinke666/react-project-template](https://github.com/lijinke666/react-project-template)
-- `Node`: --
+- `Node`: [https://github.com/lijinke666/node-project-template](https://github.com/lijinke666/node-project-template)
 - `Npm Modules`: --
 
 ## License

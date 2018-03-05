@@ -1,5 +1,7 @@
 # Dawdler
 :boy: A template generator for react and nodejs projects. If you are a dawdler, you can try it.
+
+Have Fun :)
 #### In development, I look forward to your participation.
 
 ## Installation
@@ -15,14 +17,14 @@ $ [dl | dawdler] <command>
 ## Example
 ```
 $ dl init
-? Project name body
+? Project name dawdler
 ? Select project type REACT
 
  Start pulling the project. Please waiting ...
 
  √ generator completed!
 
-cd body
+cd dawdler
 npm install | yarn
 npm start
 ```

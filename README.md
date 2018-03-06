@@ -42,7 +42,7 @@ npm start
 ```bash
  -V, --version  output the version number
  -h, --help     output usage information
- init           Create Project template
+ init | i          Create Project template
 ```
 
 ## Development

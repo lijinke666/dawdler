@@ -1,9 +1,12 @@
 {
   "name": "dawdler",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A template generator for react and nodejs projects.",
   "author": "Jinke.Li <1359518268@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha -t 20000 --require intelli-espower-loader ./tests"
+  },
   "bin": {
     "dl": "bin/dawdler",
     "dawdler": "bin/dawdler"
@@ -27,6 +30,12 @@
   "dependencies": {
     "chalk": "^2.3.1",
     "commander": "^2.14.1",
-    "inquirer": "^5.1.0"
+    "inquirer": "^5.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^5.0.2",
+    "power-assert": "^1.4.4"
   }
 }

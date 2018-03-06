@@ -17,7 +17,7 @@ program.usage('<command>')
 program
     .command('init')
     .description('Select and create project template')
-    .alias('r')
+    .alias('i')
     .action(() => {
         console.log(chalk.cyan('Thanks for using Dawdler , good luck.'))
         require('../lib/init')

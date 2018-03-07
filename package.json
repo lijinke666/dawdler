@@ -1,6 +1,6 @@
 {
   "name": "dawdler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A template generator for react and nodejs projects.",
   "author": "Jinke.Li <1359518268@qq.com>",
   "license": "MIT",

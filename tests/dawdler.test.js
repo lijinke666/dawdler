@@ -3,7 +3,8 @@ const fs = require('fs')
 
 const {
     replacePkgName,
-    replaceDbContent
+    replaceDbContent,
+    replacePkgAuthorName
 } = require("../lib/helper")
 
 const promptHelper = require('../lib/promptHelper')
@@ -26,6 +27,29 @@ describe('Dawdler Tests', function(){
             const str = "const { T_USER } = require('../db/{__DBNAME__}-models')"
             const result = "const { T_USER } = require('../db/mysql-models')"
             const content = replaceDbContent(str,"mysql")
+            assert(content === result)
+        })
+    });
+
+    describe('#replacePkgAuthorName()', () => {
+        it('should replace package.json {name}', () => {
+            const str = `
+            {
+                name:"{name}",
+                "keywords": [
+                    "dawdler",
+                    "{name}"
+                  ],
+            }`
+            const result = `
+            {
+                name:"author",
+                "keywords": [
+                    "dawdler",
+                    "author"
+                  ],
+            }`
+            const content = replacePkgAuthorName(str,"author")
             assert(content === result)
         })
     });

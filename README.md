@@ -5,7 +5,7 @@
 [![node](https://img.shields.io/node/v/passport.svg?style=flat-square)](https://www.npmjs.com/package/dawdler)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://www.npmjs.com/package/dawdler)
 
-<img src="https://github.com/lijinke666/dawdler/blob/master/logo.png" style="max-width:100%"/>
+<img src="https://github.com/lijinke666/dawdler/blob/master/logo.png" width="100"/>
 
 
 

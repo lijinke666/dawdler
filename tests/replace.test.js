@@ -9,17 +9,24 @@ const {
 
 const promptHelper = require('../lib/promptHelper')
 
-describe('Dawdler Tests', function(){
+describe('Dawdler Helper Tests', function(){
 
     describe('#replacePkgName()', () => {
         it('should replace package.json name', () => {
-            const pkg = fs.readFileSync('../package.json').toString()
+            const pkg = `
+                {
+                    "name":"dawdler",
+                    "version": "0.2.0"
+                }
+            `
+            const result = `
+                {
+                    "name":"test",
+                    "version": "0.2.0"
+                }
+            `
             const content = replacePkgName(pkg,'test')
-            console.log(pkg);
-            // assert.deepEqual(
-            //     anagrams('ab'),
-            //     ['ab','ba']
-            // );
+            assert(content === result)
         })
     });
     describe('#replaceDbContent()', () => {
@@ -53,11 +60,4 @@ describe('Dawdler Tests', function(){
             assert(content === result)
         })
     });
-
-    describe('#promptHelper.showInitPrompt()', () => {
-        it('should prompt name and project type. default name:dawdler-project.type:REACT', async () => {
-            const {name,type} = await promptHelper.showInitPrompt()
-            assert(name === "dawdler-project" && type==="REACT")
-        })
-    })
 })

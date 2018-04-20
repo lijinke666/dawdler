@@ -5,12 +5,13 @@
 [![node](https://img.shields.io/node/v/passport.svg?style=flat-square)](https://www.npmjs.com/package/dawdler)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://www.npmjs.com/package/dawdler)
 
+<img src="https://github.com/lijinke666/dawdler/blob/master/logo.png" style="max-width:100%"/>
+
 
 
 :boy: A template generator for react and nodejs projects. If you are a dawdler, you can try it.
 
 Have Fun :)
-#### In development, I look forward to your participation.
 
 ## Installation
 ```
@@ -50,6 +51,11 @@ npm start
 git clone https://github.com/lijinke666/dawdler.git
 npm install | yarn
 npm link
+```
+
+## Test Case
+```
+npm run test
 ```
 
 ## Template Address

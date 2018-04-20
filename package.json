@@ -1,11 +1,13 @@
 {
   "name": "dawdler",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A template generator for react and nodejs projects.",
   "author": "Jinke.Li <1359518268@qq.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha -t 20000 --require intelli-espower-loader ./tests"
+    "test": "mocha -t 20000 --require intelli-espower-loader ./tests",
+    "lint": "prettier --write \"lib/**/*.js\" && eslint_d --fix src",
+    "prepublish": "yarn run test && yarn run lint"
   },
   "bin": {
     "dl": "bin/dawdler",
@@ -15,6 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/lijinke666/dawdler.git"
   },
+  "pre-commit": "lint",
   "keywords": [
     "dawdler",
     "cli",
@@ -34,8 +37,15 @@
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "coffee": "^4.1.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint_d": "^5.3.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.0.2",
-    "power-assert": "^1.4.4"
+    "power-assert": "^1.4.4",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.12.1"
   }
 }

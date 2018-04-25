@@ -65,7 +65,7 @@ npm run test
 * `React`: [https://github.com/lijinke666/react-project-template](https://github.com/lijinke666/react-project-template)
 * `Node`: [https://github.com/lijinke666/node-project-template](https://github.com/lijinke666/node-project-template)
 * `Npm-React`: [https://github.com/lijinke666/react-component-project-template](https://github.com/lijinke666/react-component-project-template)
-* `Npm-Node` : [https://github.com/lijinke666/npm-module-template.git](https://github.com/lijinke666/npm-module-template.git)
+* `Npm-Node` : [https://github.com/lijinke666/npm-module-template](https://github.com/lijinke666/npm-module-template)
 
 ## License
 

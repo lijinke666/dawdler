@@ -4,7 +4,7 @@ const fs = require('fs')
 const {
     replacePkgName,
     replaceDbContent,
-    replacePkgAuthorName
+    replaceProjectName
 } = require("../lib/helper")
 
 const promptHelper = require('../lib/promptHelper')
@@ -38,7 +38,7 @@ describe('Dawdler Helper Tests', function(){
         })
     });
 
-    describe('#replacePkgAuthorName()', () => {
+    describe('#replaceProjectName()', () => {
         it('should replace package.json {name}', () => {
             const str = `
             {
@@ -56,7 +56,21 @@ describe('Dawdler Helper Tests', function(){
                     "author"
                   ],
             }`
-            const content = replacePkgAuthorName(str,"author")
+            const content = replaceProjectName(str,"author")
+            assert(content === result)
+        })
+        it('should replace README.md {name}', () => {
+            const md = `
+                # {name}
+                ## Installation
+                npm install {name} -g
+            `
+            const result = `
+                # author
+                ## Installation
+                npm install author -g
+            `
+            const content = replaceProjectName(md,"author")
             assert(content === result)
         })
     });

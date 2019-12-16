@@ -16,6 +16,12 @@ Have Fun :)
 npm install dawdler -g
 ```
 
+> or use `yarn`
+
+```
+yarn add -global dawdler
+```
+
 ## Usage
 
 ```
@@ -43,7 +49,7 @@ npm start
 ```bash
  -V, --version  output the version number
  -h, --help     output usage information
- init | i          Create Project template
+ init | i       create project template
 ```
 
 ## Development
